@@ -1,13 +1,12 @@
 <Project>
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <Version>1.8.3</Version>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <Company>Tyrrrz</Company>
-    <Copyright>Copyright (C) Alexey Golub</Copyright>
+    <Copyright>Copyright (C) Oleksii Holub</Copyright>
     <LangVersion>preview</LangVersion>
     <Nullable>enable</Nullable>
-    <WarningsAsErrors>nullable</WarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
 </Project>
