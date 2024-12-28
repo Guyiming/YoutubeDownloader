@@ -14,12 +14,12 @@ public class FileNameTemplate
     ) =>
         PathEx.EscapeFileName(
             template
-                .Replace("$num", number is not null ? $"[{number}]" : "")
+                .Replace("$num", number is not null ? $"[{number}]" : "NO_NUM")
                 .Replace("$numc", number ?? "")
                 .Replace("$id", video.Id)
                 .Replace("$title", video.Title)
                 .Replace("$author", video.Author.ChannelTitle)
-                .Replace("$uploadDate", (video as Video)?.UploadDate.ToString("yyyy-MM-dd") ?? "")
+                .Replace("$uploadDate", (video as Video)?.UploadDate.ToString("yyyy-MM-dd") ?? "NO_DATE")
                 .Trim()
                 + '.'
                 + container.Name
