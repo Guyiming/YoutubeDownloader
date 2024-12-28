@@ -28,7 +28,7 @@ public partial class SettingsService : SettingsBase, INotifyPropertyChanged
 
     public bool ShouldSkipExistingFiles { get; set; }
 
-    public string FileNameTemplate { get; set; } = "$title";
+    public string FileNameTemplate { get; set; } = "$uploadDate_$title";
 
     public int ParallelLimit { get; set; } = 2;
 
