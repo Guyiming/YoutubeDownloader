@@ -16,7 +16,11 @@ public static class FileNameTemplate
         PathEx.EscapeFileName(
             template
                 .Replace("$numc", number ?? "", StringComparison.Ordinal)
-                .Replace("$num", number is not null ? $"[{number}]" : "NO_NUM", StringComparison.Ordinal)
+                .Replace(
+                    "$num",
+                    number is not null ? $"[{number}]" : "NO_NUM",
+                    StringComparison.Ordinal
+                )
                 .Replace("$id", video.Id, StringComparison.Ordinal)
                 .Replace("$title", video.Title, StringComparison.Ordinal)
                 .Replace("$author", video.Author.ChannelTitle, StringComparison.Ordinal)
